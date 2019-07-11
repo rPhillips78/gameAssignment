@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            text-align: center;
+            margin: 5px;
+        }
+
+        #container {
+            background-color: cadetblue;
+            width: 70%;
+            margin: auto;
+            height: 650px;
+        }
+
+        img {
+            text-align: center;
+            margin: 10px auto;
+            display: block;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+
+        a {
+            width: 150px;
+            height: 25px;
+            border: 2px solid black;
+            margin: 10px;
+            text-decoration: none;
+            background-color: azure;
+            display: inline-block;
+            color: black;
+
+        }
+    </style>
+    <title>Pick it Up</title>
+</head>
+<body>
+    <div id="container">
+            <h1>Now What???</h1>
+            <img src = "{{url_for('static', filename='img/keep it.jpg')}}" alt= "story ends" width="500" height="450">
+            <a href = '/keepit'> Keep it</a> <a href='/turnitin'>Turn it in</a>
+            <a href = '/bagofmoney'>Start Over</a>
+    </div>
+</body>
+</html>
